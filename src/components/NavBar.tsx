@@ -14,9 +14,11 @@ function NavBar() {
                     <div className="inline-block">
                         <Link to="/about">About</Link>
                     </div>
-                    <div className="inline-block">
-                        <Link to="/profile">Profile</Link>
-                    </div>
+                   {location.pathname !== "/profile" && (
+                        <div className="inline-block">
+                            <Link to="/profile">Profile</Link>
+                        </div>
+                   )}
 
                 </div>
             </nav>
