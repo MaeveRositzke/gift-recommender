@@ -1,4 +1,4 @@
-import '../App.css'
+import "../App.css";
 import { Link } from "react-router";
 
 function NavBar() {
@@ -24,4 +24,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default NavBar;

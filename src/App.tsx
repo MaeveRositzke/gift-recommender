@@ -1,21 +1,20 @@
-import NavBar from './components/NavBar.tsx'
-import './App.css'
-import {Route, Router} from "react-router";
+import Profile from "./components/Profile";
+import Home from "./components/Home";
+import "./App.css";
+import {Route, Routes} from "react-router";
 
 function App() {
 
   return (
     <>
       <div>
-          <Router>
-              <NavBar ></NavBar>
-              <Route path="/" element={<App />} />
-              <Route path="/profile" element={Profile}/>
-
-          </Router>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/profile" element={<Profile />}/>
+          </Routes>
       </div>
     </>
   )
 }
 
-export default App
+export default App;

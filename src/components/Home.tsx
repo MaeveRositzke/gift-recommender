@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 
 
-function Profile() {
+function Home() {
 
     return (
 
@@ -12,4 +12,4 @@ function Profile() {
 }
 
 
-export default Profile;
+export default Home;
